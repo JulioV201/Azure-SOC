@@ -3,7 +3,7 @@
 
 ## Introduction
 
-In this project, I build a mini honeynet in Azure and ingest log sources from various resources into a Log Analytics workspace, which is then used by Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. I measured some security metrics in the insecure environment for 24 hours, apply some security controls to harden the environment, measure metrics for another 24 hours, then show the results below. The metrics we will show are:
+In this project, I implemented a mini honeynet in Azure and integrated log sources from various resources into a Log Analytics workspace. This workspace was utilized by Microsoft Sentinel to develop attack maps, trigger alerts, and generate incidents. I measured specific security metrics in the unsecured environment over a 24-hour period. Subsequently, I applied security controls to fortify the environment and measured the metrics again for another 24 hours. The results of these measurements are presented below. The metrics we will demonstrate are:
 
 - SecurityEvent (Windows Event Logs)
 - Syslog (Linux Event Logs)
@@ -39,8 +39,8 @@ For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL t
 
 ## Metrics Before Hardening / Security Controls
 
-The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2024-06-12 14:51:07
+<br>The following table shows the metrics we measured in our insecure environment for 24 hours:</br>
+<br>Start Time 2024-06-12 14:51:07</br>
 Stop Time  2024-06-13 14:51:07
 
 | Metric                   | Count
@@ -57,8 +57,8 @@ Stop Time  2024-06-13 14:51:07
 
 ## Metrics After Hardening / Security Controls
 
-The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-Start Time 2024-06-18 02:15:29.66
+<br>The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:</br>
+<br>Start Time 2024-06-18 02:15:29.66</br>
 Stop Time	 2024-06-19 02:15:29.66
 
 | Metric                   | Count
